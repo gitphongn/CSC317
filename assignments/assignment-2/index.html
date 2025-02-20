@@ -24,7 +24,8 @@
             organized format to show users what I am capable of. I believe that I can expand and develop my knowledge even further with 
             what I am commited to as a computer science student. Feel free to explore the links below. 
         </p>
-        <h3> Quick Links </h2>
+
+        <h3> Quick Links </h3>
         <nav>
             <ul>
                 <li><a href="#Education" > Education </a></li>
@@ -38,6 +39,7 @@
             <section id="Experiences"> </section>
         </main>
         
+        <br>
         <h3> Education </h3>
         <section> 
             <ul>
@@ -46,25 +48,31 @@
             </ul>
         </section>
 
-            <!-- the style section of the code will make the border for the table -->
-            <style>
-                table, th, td {
-                border: 1px solid black; 
-            }
-            </style>
+        <!-- the style section of the code will make the border for the table -->
+        <style>
+            table, th, td {
+            border: 1px solid black; 
+        }
+        </style>
             
-            <table style="width:30%"> <!-- style:width will determine how big you want the width of the border to be -->
-                <tr> 
-                    <th> Courses </th>
+        <table style="width:30%"> <!-- style:width will determine how big you want the width of the border to be -->
+            <tr> 
+                <th> Courses </th>
                     <th> Achievements </th>
-                </tr>
-                <tr>
-                    <td> Web development Course </td>
-                    <td> AI scholarship </td>
-                </tr>
-                
-            </table>
+            </tr>
+            <tr>
+                <td> Web development Course </td>
+                <td> AI scholarship </td>
+            </tr>
+            <tr>
+                <td> Python Course </td>
+            </tr>
+            <tr>
+                <td> Javascript Course </td>
+            </tr>
+        </table>
 
+        <br>
         <h3> Experiences </h3>
         <section>
             <ol>
@@ -74,13 +82,29 @@
                 <li> Toyota Technician Intern </li>
             </ol>
         </section>
+        <br>
 
+        <form action=" /submit" method="post">
+            <p> Complete the required field below: </p>
+            <label for="name">*Name:</label> <br>
+            <input type="text" id="name" name="name" required> <br>  
+
+            <label for="email">*Email:</label> <br>
+            <input type="email" id="email" name="email" required> <br>  
+
+            <label for="subject">*Subject:</label> <br>
+            <input type="text" id="subject" name="subject" required> <br>
+
+            <label for="message">*Send a Message:</label> <br>
+            <input type="text" id="message" name="message" required> <br>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <br>
         <footer>
             <section id="Contacts"> </section>
             <h2> Contacts </h2>
-            <table>
-                <tr>  </tr>
-            </table>
         </footer>
     </body>
 </html>
