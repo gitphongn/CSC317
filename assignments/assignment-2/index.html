@@ -48,16 +48,8 @@
                     <li> High School Diploma </li>
                 </ul>
             </section>
-
-            <!-- the style section of the code will make the border for the table -->
-            <style>
-                table, th, td {
-                border: 1px solid black; 
-            }
-            </style>
             
-            <section>
-                <table style="width:30%"> <!-- style:width will determine how big you want the width of the border to be -->
+                <table border="1" width="40%"> 
                     <tr> 
                         <th> Courses </th>
                         <th> Achievements </th>
@@ -73,8 +65,6 @@
                         <td> Javascript Course </td>
                     </tr>
                 </table>
-            </section>
-
             <br>
             
             <section id="Experiences">
@@ -87,33 +77,36 @@
                 </ol>
             </section>
 
-            <section id="Projects">
+            <article id="Projects">
                 <h3> Projects </h3>
                 <ul>
                     <li> Portfolio Project </li>
                     <li> Car Advertisement Page </li>
                     <li> Social Platform </li>
                 </ul>
-            </section>
+            </article>
         </main>
         <br>
 
-        <form action=" /submit" method="post">
-            <p> Complete the required field below: </p>
-            <label for="name">*Name:</label> <br>
-            <input type="text" id="name" name="name" required> <br>  
+        <div> 
+            <form action=" /submit" method="post">
+                <p> Complete the required field below: </p>
+                <label for="name">*Name:</label> <br>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required> <br>  
 
-            <label for="email">*Email:</label> <br>
-            <input type="email" id="email" name="email" required> <br>  
+                <label for="email">*Email:</label> <br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required> <br>  
 
-            <label for="subject">*Subject:</label> <br>
-            <input type="text" id="subject" name="subject" required> <br>
+                <label for="subject">*Subject:</label> <br>
+                <input type="text" id="subject" name="subject" placeholder="Enter your subject" required> <br>
 
-            <label for="message">*Send a Message:</label> <br>
-            <input type="text" id="message" name="message" required> <br>
+                <label for="message">*Send a Message:</label> <br>
+                <input type="text" id="message" name="message" placeholder="Enter your message" required> <br>
 
-            <button type="submit">Submit</button>
-        </form>
+                <input name="home" />
+                <button type="submit"> Submit </button>
+            </form>
+        </div>
 
         <br>
         <footer>
