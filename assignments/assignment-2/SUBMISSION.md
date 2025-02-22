@@ -11,11 +11,12 @@ My Approach:
 
 Code Explanation:
 
-<header>
-    <h1> Phong Nguyen </h1>
-</header>
-<h2> San Francisco State University  </h2> <br>
-<img src="images/sfsu-logo.jpg" width= 200 alt="San Francisco State University Logo"> <br>
-<img src="images/SF-city.webp" width= 200 alt="San Francisco city">
+1.
+<img src="images/screenshotcode1.png" width= 200>
 
 Looking at this code, I have the header and using h1 tag to show that this is what I want at the top and with the title big. Moving below that is the tag h2, which I used for displaying my school’s name. Below that are the image tags I used to display the images I want on my page. The image tags include the source of the image, the width, and a short description of what the image is. 
+
+2.
+<img src="images/screenshotcode2.png" width= 200>
+
+Looking at this code, this shows me implementing the form element to make an interactive form. I started with where I want the form to go once a user clicks the ‘submit’ button below. Then added label elements to let users know what to input there along with adding input elements so the users can type their input. The ‘required’ element makes the user forced to type an input to submit. 
