@@ -1,6 +1,6 @@
-Name: Phong Nguyen
-Student ID: 923377855
-GitHub Username: gitphongn
+Name: Phong Nguyen <br>
+Student ID: 923377855 <br>
+GitHub Username: gitphongn <br>
 Assignment Number: 2
 
 HTML Personal Portfolio Website Assignment Description:
@@ -12,11 +12,11 @@ My Approach:
 Code Explanation:
 
 1.
-<img src="images/screenshotcode1.png" width= 200>
+<img src="images/screenshotcode1.png" width= 500>
 
 Looking at this code, I have the header and using h1 tag to show that this is what I want at the top and with the title big. Moving below that is the tag h2, which I used for displaying my school’s name. Below that are the image tags I used to display the images I want on my page. The image tags include the source of the image, the width, and a short description of what the image is. 
 
 2.
-<img src="images/screenshotcode2.png" width= 200>
+<img src="images/screenshotcode2.png" width= 500>
 
 Looking at this code, this shows me implementing the form element to make an interactive form. I started with where I want the form to go once a user clicks the ‘submit’ button below. Then added label elements to let users know what to input there along with adding input elements so the users can type their input. The ‘required’ element makes the user forced to type an input to submit. 
