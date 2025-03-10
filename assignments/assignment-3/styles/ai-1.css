@@ -1,0 +1,147 @@
+/* General Styles - Winter Theme */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f5f9; /* Soft winter blue */
+    color: #1c1c1c; /* Dark text for contrast */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #2c3e50; /* Deep blue resembling winter night */
+    padding: 15px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #ecf0f1; /* Light text */
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s, transform 0.2s;
+}
+nav ul li a:hover {
+    color: #1abc9c; /* Icy teal effect */
+    transform: scale(1.1);
+}
+
+/* Header Section */
+header {
+    background-color: #34495e;
+    color: white;
+    padding: 50px 0;
+}
+
+/* About Me Section */
+.AboutMe, .QuickLink, #Education, #Experiences, #ExtraCurricular, #Projects {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.AboutMe:hover, .QuickLink:hover, #Education:hover, #Experiences:hover, #ExtraCurricular:hover, #Projects:hover {
+    transform: scale(1.02);
+}
+
+/* Remove Bullet Points */
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #bdc3c7;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color: #2980b9;
+    color: white;
+}
+td {
+    background-color: #ecf0f1;
+}
+
+/* Image & iFrame Centering */
+#pictures img, .container3 iframe {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+#pictures img:hover, .container3 iframe:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Form */
+.infoForm {
+    background-color: white;
+    padding: 20px;
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+}
+button {
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+/* Contact Links */
+footer ul li a {
+    color: #ff6b6b; /* Warm winter red */
+    font-weight: bold;
+    transition: color 0.3s, transform 0.2s;
+}
+footer ul li a:hover {
+    color: #feca57; /* Golden highlight effect */
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    .infoForm, .AboutMe, .QuickLink, #Education, #Experiences, #ExtraCurricular, #Projects {
+        width: 90%;
+    }
+}
