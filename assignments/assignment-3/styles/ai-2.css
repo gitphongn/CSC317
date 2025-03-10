@@ -1,56 +1,72 @@
-/* General Styles - Winter Theme */
+/* General Styling */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f5f9; /* Soft winter blue */
-    color: #1c1c1c; /* Dark text for contrast */
+    background-color: #F9FFFF;
+    color: #333;
     margin: 0;
     padding: 0;
-    text-align: center;
+    overflow-x: hidden;
 }
 
 /* Navigation Bar */
 nav {
-    background-color: #2c3e50; /* Deep blue resembling winter night */
-    padding: 15px;
+    background: linear-gradient(90deg, #B1E9FD, #FFC0CB);
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
 }
 nav ul li {
     display: inline;
-    margin: 0 15px;
 }
-nav ul li a {
-    color: #ecf0f1; /* Light text */
+nav a {
     text-decoration: none;
+    color: #333;
     font-size: 18px;
-    transition: color 0.3s, transform 0.2s;
+    transition: color 0.3s;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: block;
 }
-nav ul li a:hover {
-    color: #1abc9c; /* Icy teal effect */
-    transform: scale(1.1);
+nav a:hover {
+    color: #FFC0CB;
+    background: rgba(255, 192, 203, 0.2);
 }
 
-/* Header Section */
+/* Hero Section */
 header {
-    background-color: #34495e;
-    color: white;
-    padding: 50px 0;
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #F9FFFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
 
-/* About Me Section */
-.AboutMe, .QuickLink, #Education, #Experiences, #ExtraCurricular, #Projects {
-    background: white;
-    margin: 20px auto;
-    padding: 20px;
-    width: 80%;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-.AboutMe:hover, .QuickLink:hover, #Education:hover, #Experiences:hover, #ExtraCurricular:hover, #Projects:hover {
-    transform: scale(1.02);
+/* Sections Styling */
+section {
+    padding: 80px 10%;
+    text-align: center;
 }
 
 /* Remove Bullet Points */
@@ -60,88 +76,85 @@ ul, ol {
     margin: 0;
 }
 
-/* Table Styling */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-th, td {
-    border: 1px solid #bdc3c7;
-    padding: 10px;
-    text-align: center;
-}
-th {
-    background-color: #2980b9;
-    color: white;
-}
-td {
-    background-color: #ecf0f1;
+/* About Me */
+.AboutMe {
+    background: rgba(255, 192, 203, 0.2);
+    border-left: 5px solid #FFC0CB;
+    padding: 40px;
+    border-radius: 8px;
 }
 
-/* Image & iFrame Centering */
-#pictures img, .container3 iframe {
+/* Center Images */
+#pictures img {
     display: block;
     margin: 20px auto;
-    border-radius: 10px;
-    transition: transform 0.3s;
-}
-#pictures img:hover, .container3 iframe:hover {
-    transform: scale(1.05);
+    max-width: 100%;
 }
 
 /* Contact Form */
 .infoForm {
-    background-color: white;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background: rgba(255, 192, 203, 0.2);
+    padding: 40px;
+    border-radius: 8px;
     width: 50%;
     margin: auto;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-input, button {
+.infoForm input, .infoForm button {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #bdc3c7;
+    margin-top: 10px;
+    border: none;
     border-radius: 5px;
 }
-button {
-    background-color: #3498db;
-    color: white;
+.infoForm button {
+    background-color: #AFE9FC;
     cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
+    transition: background 0.3s;
 }
-button:hover {
-    background-color: #2980b9;
-    transform: scale(1.05);
+.infoForm button:hover {
+    background-color: #B9EDFE;
+}
+
+/* Table Styling */
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 40px auto;
+    text-align: center;
+    background: rgba(255, 192, 203, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 15px;
+}
+th, td {
+    border: 1px solid #AFE9FC;
+    padding: 15px;
+}
+th {
+    background: #B1E9FD;
+    font-weight: bold;
+}
+
+/* Center iframes */
+.container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    padding-top: 20px;
 }
 
 /* Footer */
 footer {
-    background-color: #2c3e50;
-    color: white;
+    background: linear-gradient(90deg, #B1E9FD, #FFC0CB);
     padding: 20px;
-}
-
-/* Contact Links */
-footer ul li a {
-    color: #ff6b6b; /* Warm winter red */
-    font-weight: bold;
-    transition: color 0.3s, transform 0.2s;
-}
-footer ul li a:hover {
-    color: #feca57; /* Golden highlight effect */
-    transform: scale(1.1);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-    .infoForm, .AboutMe, .QuickLink, #Education, #Experiences, #ExtraCurricular, #Projects {
-        width: 90%;
-    }
+    text-align: center;
+    color: #333;
 }

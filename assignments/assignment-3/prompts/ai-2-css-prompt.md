@@ -1,4 +1,16 @@
-Please create a simple CSS file for my portfolio website inspired by "batman" look and feel. I'm a student learning CSS basics and need styling for the following sections: 
+I'm looking to create a CSS file for my portfolio website inspired by this image. I'd like to incorporate elements from the image such as its colors, textures, and overall mood into my site design.
+
+<img src="images/sakura-tree.webp" width="200">
+
+Please generate a CSS file that:
+
+Uses the color palette extracted from this image
+Incorporates the image (or elements from it) as:
+A hero section background
+A text mask for headings
+Section dividers or accents
+Pattern or texture elements
+My portfolio includes these sections:
 
 Navigation bar
 Header/intro section
@@ -7,17 +19,15 @@ Education section
 Projects section
 Contact form
 Footer
-I'd like my website to have the colors, style, and mood that remind people of "dystopian" Make sure the layout is responsive for mobile and desktop screens. Please add helpful comments that explain what different parts of the CSS do. 
+Please create responsive styling that works on both mobile and desktop. Include helpful comments explaining what different parts of the CSS do.
 
-Some specific things I'd like:
+Additional styling requests:
 
-A color scheme based on "dystopian" 
-Easy-to-read fonts
-Some simple hover effects on buttons and links
-Basic responsive design (works on mobile and desktop)
-Reasonable spacing between elements
-Please also remove any bullet points
-Structure neatly
-make the table look nicer
-Add some effects
-Center images
+Use modern CSS techniques
+Create smooth transitions between sections
+Make interactive elements (buttons, links) feel cohesive with the image style
+Balance readability with creative design elements
+remove bullet points
+make things neat
+add some effects
+center images
