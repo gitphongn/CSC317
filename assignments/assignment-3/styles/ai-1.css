@@ -1,147 +1,165 @@
-/* General Styles - Winter Theme */
+/* General styling for the entire website */
 body {
+    background-color: #220707; /* Dark background for a dystopian feel */
+    color: #e0e0e0; /* Light grey text for contrast */
     font-family: 'Arial', sans-serif;
-    background-color: #f0f5f9; /* Soft winter blue */
-    color: #1c1c1c; /* Dark text for contrast */
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
-/* Navigation Bar */
+/* Navigation Bar Styling */
 nav {
-    background-color: #2c3e50; /* Deep blue resembling winter night */
+    background-color: #1a1a1a; /* Slightly lighter than body for contrast */
     padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(255, 255, 0, 0.2);
 }
+
 nav ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
+
 nav ul li {
     display: inline;
     margin: 0 15px;
 }
-nav ul li a {
-    color: #ecf0f1; /* Light text */
+
+nav a {
     text-decoration: none;
+    color: #f5c518; /* Batman yellow */
     font-size: 18px;
     transition: color 0.3s, transform 0.2s;
 }
-nav ul li a:hover {
-    color: #1abc9c; /* Icy teal effect */
+
+nav a:hover {
+    color: #ffcc00; /* Brighter yellow on hover */
     transform: scale(1.1);
 }
 
-/* Header Section */
+/* Header/Intro Section */
 header {
-    background-color: #34495e;
-    color: white;
-    padding: 50px 0;
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to right, #000000, #1a1a1a);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s;
 }
 
-/* About Me Section */
-.AboutMe, .QuickLink, #Education, #Experiences, #ExtraCurricular, #Projects {
-    background: white;
-    margin: 20px auto;
-    padding: 20px;
-    width: 80%;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-.AboutMe:hover, .QuickLink:hover, #Education:hover, #Experiences:hover, #ExtraCurricular:hover, #Projects:hover {
+header:hover {
     transform: scale(1.02);
 }
 
-/* Remove Bullet Points */
-ul, ol {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+/* Section Styling */
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(255, 255, 0, 0.2);
+    transition: box-shadow 0.3s;
 }
 
-/* Table Styling */
+section:hover {
+    box-shadow: 0 6px 12px rgba(255, 255, 0, 0.4);
+}
+
+/* Remove bullet points from lists */
+ul, ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Center Images and Iframes */
+img, iframe {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+img:hover, iframe:hover {
+    transform: scale(1.05);
+}
+
+/* Styling for Tables */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
-}
-th, td {
-    border: 1px solid #bdc3c7;
-    padding: 10px;
-    text-align: center;
-}
-th {
-    background-color: #2980b9;
-    color: white;
-}
-td {
-    background-color: #ecf0f1;
-}
-
-/* Image & iFrame Centering */
-#pictures img, .container3 iframe {
-    display: block;
-    margin: 20px auto;
+    margin: 20px 0;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
     border-radius: 10px;
-    transition: transform 0.3s;
-}
-#pictures img:hover, .container3 iframe:hover {
-    transform: scale(1.05);
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(255, 255, 0, 0.2);
 }
 
-/* Contact Form */
-.infoForm {
-    background-color: white;
-    padding: 20px;
-    width: 50%;
+table th, table td {
+    padding: 12px;
+    border: 1px solid #444;
+    text-align: left;
+}
+
+table th {
+    background-color: #f5c518;
+    color: #121212;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #2a2a2a;
+}
+
+table tr:hover {
+    background-color: rgba(255, 255, 0, 0.2);
+    transition: background 0.3s;
+}
+
+/* Contact Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
     margin: auto;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
+
 input, button {
-    width: 100%;
     padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #bdc3c7;
+    margin-top: 10px;
+    border: none;
     border-radius: 5px;
 }
+
 button {
-    background-color: #3498db;
-    color: white;
+    background-color: #f5c518;
+    color: #121212;
     cursor: pointer;
     transition: background 0.3s, transform 0.2s;
 }
+
 button:hover {
-    background-color: #2980b9;
-    transform: scale(1.05);
-}
-
-/* Footer */
-footer {
-    background-color: #2c3e50;
-    color: white;
-    padding: 20px;
-}
-
-/* Contact Links */
-footer ul li a {
-    color: #ff6b6b; /* Warm winter red */
-    font-weight: bold;
-    transition: color 0.3s, transform 0.2s;
-}
-footer ul li a:hover {
-    color: #feca57; /* Golden highlight effect */
+    background-color: #ffcc00;
     transform: scale(1.1);
 }
 
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    transition: background 0.3s;
+}
+
+footer:hover {
+    background-color: #1a1a1a;
+}
+
 /* Responsive Design */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     nav ul li {
         display: block;
         margin: 10px 0;
-    }
-    .infoForm, .AboutMe, .QuickLink, #Education, #Experiences, #ExtraCurricular, #Projects {
-        width: 90%;
     }
 }
