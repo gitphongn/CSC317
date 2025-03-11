@@ -1,6 +1,6 @@
 I'm looking to create a CSS file for my portfolio website inspired by this image. I'd like to incorporate elements from the image such as its colors, textures, and overall mood into my site design.
 
-<img src="images/sakura-tree.webp" width="200">
+<img src="sakura-tree.webp" width="200">
 
 Please generate a CSS file that:
 
