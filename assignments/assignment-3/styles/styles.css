@@ -53,7 +53,7 @@ header {
     list-style: none;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;        /* this will make the items wrap */
+    flex-wrap: wrap;        /* this will make the items stay within the box */
     padding: 0px;
 }
 
@@ -75,7 +75,7 @@ header {
 }
 
 .container1 > section  {
-    background-color: rgb(180, 252, 223);
+    background-color: #e0e5ff;
     margin: 50px;
     padding: 30px;
     width: 400px;
@@ -91,7 +91,6 @@ header {
 
 .container1 > section ul, ol {
     list-style: none;
-    display: inline-flexbox;
 }
 
 .container1 > section ul li {
@@ -108,12 +107,10 @@ header {
     gap: 50px 100px;
     grid-template-columns: auto;
     justify-content: center;
-    border-collapse: separate;
     border-spacing: 30px 0px;
 }
 
 .container1 > section table tr {
-    display: flexbox;
     justify-content: center;
 }
 
@@ -129,7 +126,7 @@ header {
 }
 
 .container2 > section  {
-    background-color: rgb(180, 252, 223);
+    background-color: #e0e5ff;
     margin: 50px;
     padding: 30px;
     width: 400px;
@@ -154,7 +151,7 @@ header {
 
 .infoForm {
     display: flex;
-    background-color: #ebc8ff;
+    background-color: #e0e5ff;
     max-width: 40%;
     width: 100%;
     margin: 0px auto;
