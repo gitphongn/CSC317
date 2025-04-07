@@ -6,24 +6,24 @@ body {
     height: 100vh;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  }
+}
   
-  .calculator {
+.calculator {
     background-color: #1c1c1c;
     padding: 20px;
     border-radius: 30px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     position: relative;
-  }
+}
   
-  .result {
+.result {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     margin-bottom: 20px;
-  }
+}
   
-  #display {
+#display {
     width: 260px;
     height: 50px;
     background: black;
@@ -32,9 +32,9 @@ body {
     text-align: right;
     border: none;
     margin-bottom: 5px;
-  }
+}
   
-  #history {
+#history {
     width: 150px;
     height: 40px;
     background: #333;
@@ -45,18 +45,18 @@ body {
     position: absolute;
     right: -170px;
     top: 20px;
-  }
+}
   
-  .buttons {
+.buttons {
     display: grid;
     grid-template-columns: repeat(4, 60px);
     grid-template-rows: repeat(5, 60px);
     gap: 10px;
     justify-content: center;
-  }
+}
   
-  /* button style */
-  .buttons input {
+/* button style */
+.buttons input {
     border-radius: 50%;
     border: none;
     font-size: 1.5rem;
@@ -64,22 +64,21 @@ body {
     background-color: #333;
     cursor: pointer;
     transition: background 0.2s;
-  }
+}
   
-  /* speical buttons */
-  #clear, #plusMinus, #percent {
+/* special buttons */
+#clear, #plusMinus, #percent {
     background-color: #a5a5a5;
     color: black;
-  }
+}
   
-  /* operator */
-  #divide, #multiply, #subtract, #add, #equal {
+/* operator */
+#divide, #multiply, #subtract, #add, #equal {
     background-color: #ff9500;
     color: white;
-  }
+}
   
-  /* Button hover effect */
-  input[type="button"]:hover {
+input[type="button"]:hover {
     opacity: 0.8;
-  }
+}
   
