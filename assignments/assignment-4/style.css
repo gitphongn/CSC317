@@ -1,39 +1,3 @@
-/* .calculator {
-    text-align: center;
-    background-color: antiquewhite;
-}
-
-.result {
-    display: grid;
-    text-align: center;
-}
-
-#display {
-    width: 100px;
-    height: 30px;
-}
-
-.specialButtons input {
-    border-radius: 40px;
-    width: 100px;
-    height: 100px;
-    border: none;
-}
-
-.numbers input {
-    border-radius: 40px;
-    width: 100px;
-    height: 100px;
-    border: none;
-}
-
-.operators input {
-    border-radius: 40px;
-    width: 100px;
-    height: 100px;
-    border: none;
-} */
-
 body {
     background-color: #000;
     display: flex;
@@ -91,7 +55,7 @@ body {
     justify-content: center;
   }
   
-  /* General button style */
+  /* button style */
   .buttons input {
     border-radius: 50%;
     border: none;
@@ -102,24 +66,16 @@ body {
     transition: background 0.2s;
   }
   
-  /* Special Buttons */
+  /* speical buttons */
   #clear, #plusMinus, #percent {
     background-color: #a5a5a5;
     color: black;
   }
   
-  /* Operators */
+  /* operator */
   #divide, #multiply, #subtract, #add, #equal {
     background-color: #ff9500;
     color: white;
-  }
-  
-  /* Zero button spans 2 columns */
-  #zero {
-    grid-column: span 2;
-    border-radius: 30px;
-    text-align: left;
-    padding-left: 20px;
   }
   
   /* Button hover effect */
