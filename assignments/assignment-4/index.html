@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="hello.js"></script>
-    <title>Calculator</title>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <script src="index.js"></script>
+  <title>Calculator</title>
 </head>
 <body>
-
-    <div class="calculator">
-        <div>
-            <input id="display">
-            <input id="history">
-        </div>
-        <div class="specialButtons">
-            <input type="button" id="clear" value="AC">
-            <input type="button" id="plusMinus" value="+/-">
-            <input type="button" id="percent" value="%">
-        </div>
-        <div class="numbers">
-            <input type="button" id="seven" value="7">
-            <input type="button" id="eight" value="8">
-            <input type="button" id="nine" value="9">
-            <input type="button" id="four" value="4">
-            <input type="button" id="five" value="5">
-            <input type="button" id="six" value="6">
-            <input type="button" id="one" value="1">
-            <input type="button" id="two" value="2">
-            <input type="button" id="three" value="3">
-            <input type="button" id="blank">
-            <input type="button" id="zero" value="0">
-            <input type="button" id="dot" value=".">
-        </div>
-        <div class="operators">
-            <input type="button" id="slash" value="/">
-            <input type="button" id="multiply" value="X">
-            <input type="button" id="subtract" value="-">
-            <input type="button" id="add" value="+">
-            <input type="button" id="equal" value="=">
-        </div>
-
+  <div class="calculator">
+    <div class="result">
+      <input id="display" readonly />
+      <input id="history" readonly />
     </div>
-
+    <div class="buttons">
+      <!-- row 1 -->
+      <input type="button" id="clear" value="AC" />
+      <input type="button" id="plusMinus" value="+/-" />
+      <input type="button" id="percent" value="%" />
+      <input type="button" id="divide" value="/" />
+      
+      <!-- row 2 -->
+      <input type="button" id="seven" value="7" />
+      <input type="button" id="eight" value="8" />
+      <input type="button" id="nine" value="9" />
+      <input type="button" id="multiply" value="X" />
+      
+      <!-- row 3 -->
+      <input type="button" id="four" value="4" />
+      <input type="button" id="five" value="5" />
+      <input type="button" id="six" value="6" />
+      <input type="button" id="subtract" value="−" />
+      
+      <!-- row 4 -->
+      <input type="button" id="one" value="1" />
+      <input type="button" id="two" value="2" />
+      <input type="button" id="three" value="3" />
+      <input type="button" id="add" value="+" />
+      
+      <!-- row 5 -->
+      <input type="button" id="zero" value="0" />
+      <input type="button" id="dot" value="." />
+      <input type="button" id="equal" value="=" />
+    </div>
+  </div>
 </body>
 </html>
