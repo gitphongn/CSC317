@@ -3,82 +3,106 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100%;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-}
+    padding: 16px;
+  }
   
-.calculator {
+  .calculator {
     background-color: #1c1c1c;
-    padding: 20px;
+    padding: 24px;
     border-radius: 30px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     position: relative;
-}
+    width: 100%;
+    max-width: 320px;
+  }
   
-.result {
+  .result {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-bottom: 20px;
-}
+    margin-bottom: 16px;
+  }
   
-#display {
-    width: 260px;
-    height: 50px;
+  #display {
+    width: 100%;
+    height: 48px;
     background: black;
     color: white;
-    font-size: 2rem;
+    font-size: 32px;
     text-align: right;
     border: none;
-    margin-bottom: 5px;
-}
+    margin-bottom: 8px;
+    padding: 4px 8px;
+    box-sizing: border-box;
+  }
   
-#history {
-    width: 150px;
-    height: 40px;
+  #history {
+    width: 100%;
     background: #333;
     color: white;
-    font-size: 1rem;
+    font-size: 16px;
     text-align: right;
     border: none;
-    position: absolute;
-    right: -170px;
-    top: 20px;
-}
+    padding: 4px 8px;
+    box-sizing: border-box;
+  }
   
-.buttons {
+  .buttons {
     display: grid;
-    grid-template-columns: repeat(4, 60px);
-    grid-template-rows: repeat(5, 60px);
-    gap: 10px;
-    justify-content: center;
-}
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+  }
   
-/* button style */
-.buttons input {
+  .buttons input {
     border-radius: 50%;
     border: none;
-    font-size: 1.5rem;
+    font-size: 24px;
     color: white;
     background-color: #333;
     cursor: pointer;
     transition: background 0.2s;
-}
+    height: 64px;
+    width: 100%;
+    aspect-ratio: 1;
+  }
   
-/* special buttons */
-#clear, #plusMinus, #percent {
+  /* Special buttons */
+  #clear, #plusMinus, #percent {
     background-color: #a5a5a5;
     color: black;
-}
+  }
   
-/* operator */
-#divide, #multiply, #subtract, #add, #equal {
+  /* Operator buttons */
+  #divide, #multiply, #subtract, #add, #equal {
     background-color: #ff9500;
     color: white;
-}
+  }
   
-input[type="button"]:hover {
+  input[type="button"]:hover {
     opacity: 0.8;
-}
+  }
+  
+  /* Media Queries */
+  @media (max-width: 400px) {
+    .calculator {
+      padding: 16px;
+      max-width: 100%;
+    }
+  
+    #display {
+      font-size: 24px;
+    }
+  
+    #history {
+      font-size: 14px;
+    }
+  
+    .buttons input {
+      font-size: 19.2px;
+      height: 48px;
+    }
+  }
   
