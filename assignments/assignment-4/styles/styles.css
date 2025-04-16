@@ -1,0 +1,204 @@
+body {
+    background-color: rgb(170, 198, 223);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0px;
+}
+
+header {
+    text-align: center;
+    background-color: #e0e5ff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+#pictures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AboutMe {
+    border-radius: 5px;
+    background-color: #e0e5ff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.AboutMe h3 {
+    text-align: center;
+}
+.AboutMe p {
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.QuickLink {
+    border-radius: 0px 0px 50px 50px;
+    background-color: #e0e5ff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 60%;         /* making sure the content doesn't take the whole page */
+    width: 100%;
+    margin: 0px auto;
+}
+
+.QuickLink h3 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.QuickLink  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;        /* this will make the items stay within the box */
+    padding: 0px;
+}
+
+.QuickLink nav ul li a {
+    padding: 20px;
+    display: flex;
+    text-decoration: none;
+    font-size: larger;
+}
+
+.QuickLink nav ul li a:hover {
+    color:rgb(255, 0, 0);
+}
+
+.container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container1 > section  {
+    background-color: #e0e5ff;
+    margin: 50px;
+    padding: 30px;
+    width: 400px;
+    text-align: center;
+    border-radius: 40px;
+    transition: transform 0.2s ease-in;
+}
+
+.container1 > section:hover {
+    transform: scale(1.1);
+}
+
+
+.container1 > section ul, ol {
+    list-style: none;
+}
+
+.container1 > section ul li {
+    margin-bottom: 10px;
+}
+
+.container1 > section ol li {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.container1 > section table {
+    display: grid;
+    gap: 50px 100px;
+    grid-template-columns: auto;
+    justify-content: center;
+    border-spacing: 30px 0px;
+}
+
+.container1 > section table tr {
+    justify-content: center;
+}
+
+.container1 > section td, th {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container2 > section  {
+    background-color: #e0e5ff;
+    margin: 50px;
+    padding: 30px;
+    width: 400px;
+    text-align: center;
+    border-radius: 40px;
+    transition: transform 0.2s ease-in;
+}
+
+.container2 > section:hover {
+    transform: scale(1.1);
+}
+
+.container2 > section ul li {
+    list-style: none;
+    padding: 20px;
+}
+.container3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.infoForm {
+    display: flex;
+    background-color: #e0e5ff;
+    max-width: 40%;
+    width: 100%;
+    margin: 0px auto;
+    border-radius: 40px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.infoForm form {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infoForm form button:hover {
+    background-color: rgb(125, 231, 134);
+    transition: transform 0.2s;
+    transform: scale(1.5);
+}
+
+footer {
+    background-color: #e0e5ff;
+    padding-bottom: 10px;
+}
+
+#Contacts {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+#Contacts h2 {
+    margin: 0px;
+    padding-bottom: 10px;
+}
+
+#Contacts li {
+    list-style: none;
+    font-size: larger;
+    padding: 5px;
+}
+
+#Contacts a {
+    text-decoration: none;
+}
+#Contacts a:hover {
+    color: rgb(197, 0, 0);
+}
+
