@@ -15,6 +15,25 @@ header h1:hover, h2:hover {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6)  /* used from AI */
 }
 
+.profile-pic {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.profile-pic img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.profile-pic img:hover {
+    transform: scale(1.1);
+}
+
 .AboutMe {
     background: linear-gradient(to right, #c6fdff, #FFC0CB);
     padding: 30px;

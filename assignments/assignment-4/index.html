@@ -64,6 +64,10 @@
     <body>
         
         <main> 
+            <div class="profile-pic">
+                <img src="images/profile.jpg" alt="Phong Nguyen" width="200" height="200">
+            </div>
+
             <header>
                 <h1> Phong Nguyen </h1>
                 <h2> San Francisco State University  </h2> <br>
@@ -146,11 +150,40 @@
                 </section>
 
                 <section id="Projects">
+
+                    <style>
+                        .calculator-link-preview {
+                            position: relative;
+                            display: inline-block;
+                        }
+
+                        .calculator-link-preview .preview-image {
+                            display: none;
+                            position: absolute;
+                            top: 100%; /* show image below the link */
+                            left: 0;
+                            width: 200px;
+                            border: 1px solid #ccc;
+                            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+                            margin-top: 8px;
+                            z-index: 100;
+                            background: white;
+                        }
+
+                        .calculator-link-preview:hover .preview-image {
+                            display: block;
+                        }
+
+                    </style>
+
                     <h3> Projects </h3>
                     <ul>
                         <li> Portfolio Project </li>
+                        <li class="calculator-link-preview">
+                            <a href="calculator.html" target="_blank"> Calculator </a>
+                            <img src="images/calculator-preview.jpg" alt="Calculator Preview" class="preview-image">
+                        </li>                        
                         <li> Car Advertisement Page </li>
-                        <li> Social Platform </li>
                     </ul>
                 </section>
             </div>
@@ -197,8 +230,6 @@
             <h3>Theme Switcher</h3>
             <div class="theme-buttons">
                 <button class="theme-button active" data-theme="styles">Hand-Written</button>
-                <button class="theme-button" data-theme="ai-1">AI 1</button>
-                <button class="theme-button" data-theme="ai-2">AI 2</button>
                 <button class="theme-button" data-theme="hybrid">Hybrid</button>
             </div>
         </div>
