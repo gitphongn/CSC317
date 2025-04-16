@@ -156,33 +156,61 @@
                             position: relative;
                             display: inline-block;
                         }
-
-                        .calculator-link-preview .preview-image {
+                    
+                        .calculator-link-preview .dropdown-content {
                             display: none;
                             position: absolute;
-                            top: 100%; /* show image below the link */
+                            top: 100%;
                             left: 0;
-                            width: 200px;
+                            width: 250px;
+                            background-color: #fff;
                             border: 1px solid #ccc;
-                            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-                            margin-top: 8px;
+                            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+                            padding: 10px;
                             z-index: 100;
-                            background: white;
                         }
-
-                        .calculator-link-preview:hover .preview-image {
+                    
+                        .calculator-link-preview:hover .dropdown-content {
                             display: block;
                         }
-
-                    </style>
+                    
+                        .dropdown-content img {
+                            width: 100%;
+                            height: auto;
+                            margin: 8px 0;
+                        }
+                    
+                        .dropdown-content p {
+                            margin: 0;
+                            font-size: 14px;
+                        }
+                    
+                        .dropdown-content a {
+                            display: inline-block;
+                            margin-top: 5px;
+                            color: #007bff;
+                            text-decoration: none;
+                        }
+                    
+                        .dropdown-content a:hover {
+                            text-decoration: underline;
+                        }
+                    </style>                    
 
                     <h3> Projects </h3>
                     <ul>
-                        <li> Portfolio Project </li>
                         <li class="calculator-link-preview">
-                            <a href="calculator.html" target="_blank"> Calculator </a>
-                            <img src="images/calculator-preview.jpg" alt="Calculator Preview" class="preview-image">
-                        </li>                        
+                            JavaScript Calculator 
+                            <div class="dropdown-content">
+                                <p>This project is a basic calculator built using HTML, CSS, and JavaScript. It performs arithmetic operations and has the 
+                                    UI of IOS Calculator.</p>
+                                <img src="images/calculator-preview.jpg" alt="Calculator Preview">
+                                <br>
+                                <a href="calculator.html" target="_blank">View Project</a>
+                            </div>
+                        </li>
+                        
+                        <li> Portfolio Project </li>                       
                         <li> Car Advertisement Page </li>
                     </ul>
                 </section>
