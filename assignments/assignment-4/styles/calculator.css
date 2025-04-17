@@ -1,13 +1,12 @@
 body {
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100%;
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    padding: 16px;
-  }
+  background-color: #000;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
   
   .calculator {
     background-color: #1c1c1c;
@@ -104,6 +103,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
   
   
