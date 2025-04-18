@@ -21,32 +21,34 @@
       <button class="theme-button" data-theme="calculator">Default</button>
     </div>
   </div>
+  <!-- theme switcher JavaScript -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      const themeButtons = document.querySelectorAll('.theme-button');
-      const themeStylesheet = document.getElementById('css-theme');
+      const themeButtons = document.querySelectorAll('.theme-button');   // Get all theme buttons
+      const themeStylesheet = document.getElementById('css-theme');      // Get the stylesheet
 
       function setActiveTheme(themeName) {
-        themeStylesheet.href = `styles/${themeName}.css`;
+        themeStylesheet.href = `styles/${themeName}.css`;  // Update the stylesheet
 
+        // Update active button 
         themeButtons.forEach(button => {
           if (button.dataset.theme === themeName) {
             button.classList.add('active');
           } else {
-            button.classList.remove('active');
+            button.classList.remove('active');  
           }
         });
 
-        localStorage.setItem('preferredCalculatorTheme', themeName);
+        localStorage.setItem('preferredCalculatorTheme', themeName);  // Save preference
       }
-
+      // Add click event to all theme buttons
       themeButtons.forEach(button => {
         button.addEventListener('click', function () {
           const themeName = this.dataset.theme;
           setActiveTheme(themeName);
         });
       });
-
+      // Check if there's a saved theme preference
       const savedTheme = localStorage.getItem('preferredCalculatorTheme');
       if (savedTheme) {
         setActiveTheme(savedTheme);
