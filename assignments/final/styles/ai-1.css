@@ -1,0 +1,165 @@
+/* General styling for the entire website */
+body {
+    background-color: #220707; /* Dark background for a dystopian feel */
+    color: #e0e0e0; /* Light grey text for contrast */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: #1a1a1a; /* Slightly lighter than body for contrast */
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(255, 255, 0, 0.2);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f5c518; /* Batman yellow */
+    font-size: 18px;
+    transition: color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+    color: #ffcc00; /* Brighter yellow on hover */
+    transform: scale(1.1);
+}
+
+/* Header/Intro Section */
+header {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to right, #000000, #1a1a1a);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s;
+}
+
+header:hover {
+    transform: scale(1.02);
+}
+
+/* Section Styling */
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(255, 255, 0, 0.2);
+    transition: box-shadow 0.3s;
+}
+
+section:hover {
+    box-shadow: 0 6px 12px rgba(255, 255, 0, 0.4);
+}
+
+/* Remove bullet points from lists */
+ul, ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Center Images and Iframes */
+img, iframe {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+img:hover, iframe:hover {
+    transform: scale(1.05);
+}
+
+/* Styling for Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(255, 255, 0, 0.2);
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #444;
+    text-align: left;
+}
+
+table th {
+    background-color: #f5c518;
+    color: #121212;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #2a2a2a;
+}
+
+table tr:hover {
+    background-color: rgba(255, 255, 0, 0.2);
+    transition: background 0.3s;
+}
+
+/* Contact Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+}
+
+input, button {
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #f5c518;
+    color: #121212;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #ffcc00;
+    transform: scale(1.1);
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    transition: background 0.3s;
+}
+
+footer:hover {
+    background-color: #1a1a1a;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
