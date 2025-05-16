@@ -104,6 +104,54 @@
             <br>
         </section>
 
+        <section class="FeaturedProject">
+            <h3>🌟 Featured Project</h3>
+            <div class="featured-content">
+                <img src="images/taskmanager-preview.jpg" alt="Task Manager Preview" width="300">
+                <div class="featured-description">
+                    <p>
+                        This Task Manager webpage helps users efficiently manage their events and tasks by allowing them to add titles, descriptions,
+                        and set specific dates and times. Users can view all events in a list format and easily delete them when no longer needed.
+                    </p>
+                    <a href="https://csc317-group-h.onrender.com/" target="_blank">View Task Manager Project</a>
+                </div>
+            </div>
+        </section>
+
+        <style>
+            .FeaturedProject {
+                background-color: #f9f9f9;
+                border-radius: 10px;
+                padding: 20px;
+                margin-top: 20px;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            }
+
+            .featured-content {
+                display: flex;
+                align-items: flex-start;
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+
+            .featured-description {
+                max-width: 500px;
+            }
+
+            .featured-description a {
+                display: inline-block;
+                margin-top: 10px;
+                color: #007bff;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            .featured-description a:hover {
+                text-decoration: underline;
+            }
+
+        </style>
+
         <div id="pictures">
             <img src="images/sfsu-logo.jpg" width="200" alt="San Francisco State University Logo"> <br>
             <img src="images/SF-city.webp" width="368" alt="San Francisco city">
@@ -180,6 +228,50 @@
                         display: block;
                     }
 
+                    .Portfolio-preview {
+                        position: relative;
+                        display: inline-block;
+                    }
+
+                    .Portfolio-preview .dropdown-content {
+                        display: none;
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        width: 250px;
+                        background-color: #fff;
+                        border: 1px solid #ccc;
+                        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+                        padding: 10px;
+                        z-index: 100;
+                    }
+
+                    .Portfolio-preview:hover .dropdown-content {
+                        display: block;
+                    }
+
+                    .Task-Manager-preview {
+                        position: relative;
+                        display: inline-block;
+                    }
+
+                    .Task-Manager-preview .dropdown-content {
+                        display: none;
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        width: 250px;
+                        background-color: #fff;
+                        border: 1px solid #ccc;
+                        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+                        padding: 10px;
+                        z-index: 100;
+                    }
+
+                    .Task-Manager-preview:hover .dropdown-content {
+                        display: block;
+                    }
+
                     .dropdown-content img {
                         width: 100%;
                         height: auto;
@@ -217,8 +309,31 @@
                         </div>
                     </li>
 
-                    <li> Portfolio Project </li>
-                    <li> Car Advertisement Page </li>
+                    <li class="Portfolio-preview">
+                        Portfolio Project
+                        <div class="dropdown-content">
+                            <p>This portfolio showcases my skills, projects, and experiences 
+                                as a computer science student at San Francisco State University. 
+                                It highlights my work in web development, programming, and internships, reflecting my growth and passion in the tech field.
+                            </p>
+                            <img src="images/portfolio-preview.jpg" alt="Portfolio Preview">
+                            <br>
+                            <a href="index.html" target="_blank">View Project</a>
+                        </div>
+                    </li>
+
+                    <li class="Task-Manager-preview">
+                        Task Manager
+                        <div class="dropdown-content">
+                            <p>This Task Manager webpage helps users efficiently manage their events and tasks by allowing them to 
+                                add titles, descriptions, and set specific dates and times. 
+                                Users can view all events in a list format and easily delete them when no longer needed.
+                            </p>
+                            <img src="images/taskmanager-preview.jpg" alt="Task Manager Preview">
+                            <br>
+                            <a href="https://csc317-group-h.onrender.com/" target="_blank">View Project</a>
+                        </div>
+                    </li>
                 </ul>
             </section>
         </div>
