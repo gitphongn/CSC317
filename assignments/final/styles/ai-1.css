@@ -1,0 +1,126 @@
+/* Reset & Basics */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(to bottom right, #1f2937, #4b5563); /* Frosty gray-blue gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #f9fafb;
+  }
+  
+  /* Container & Calculator */
+  .container {
+    text-align: center;
+  }
+  
+  .calculator {
+    background-color: #111827; /* Dark slate */
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    width: 320px;
+  }
+  
+  /* Display */
+  .result {
+    margin-bottom: 1rem;
+  }
+  
+  #display,
+  #history {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    text-align: right;
+    margin-bottom: 0.5rem;
+    background-color: #374151; /* dark gray-blue */
+    color: #f9fafb;
+  }
+  
+  /* Buttons */
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.75rem;
+  }
+  
+  .buttons input[type="button"] {
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 12px;
+    background-color: #1e3a8a; /* Blue */
+    color: #f9fafb;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Special Button Styles */
+  #clear,
+  #plusMinus,
+  #percent {
+    background-color: #9ca3af; /* soft gray */
+    color: #111827;
+  }
+  
+  #equal {
+    background-color: #2563eb; /* vibrant blue */
+    color: white;
+  }
+  
+  #add,
+  #subtract,
+  #multiply,
+  #divide {
+    background-color: #3b82f6; /* lighter blue */
+  }
+  
+  /* Hover Effects */
+  .buttons input[type="button"]:hover {
+    background-color: #60a5fa;
+  }
+  
+  /* Return Link */
+  #return {
+    display: inline-block;
+    margin-top: 1.5rem;
+    color: #e5e7eb;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+  }
+  
+  #return:hover {
+    color: #93c5fd;
+  }
+
+    /* Media Queries */
+    @media (max-width: 400px) {
+        .calculator {
+          padding: 16px;
+          max-width: 100%;
+        }
+      
+        #display {
+          font-size: 24px;
+        }
+      
+        #history {
+          font-size: 14px;
+        }
+      
+        .buttons input {
+          font-size: 19.2px;
+          height: 48px;
+        }
+      }
+  

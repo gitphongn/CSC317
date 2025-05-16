@@ -1,0 +1,223 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f0f0f0;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background: linear-gradient(to right, #c6fdff, #FFC0CB);
+    text-align: center;
+    padding: 30px;
+}
+header h1:hover, h2:hover {
+    transform: scale(1.1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6)  /* used from AI */
+}
+
+.profile-pic {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.profile-pic img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.profile-pic img:hover {
+    transform: scale(1.1);
+}
+
+.AboutMe {
+    background: linear-gradient(to right, #c6fdff, #FFC0CB);
+    padding: 30px;
+    text-align: center;
+}
+
+.QuickLink {
+    max-width: 70%;
+    width: 100%;
+    margin: 0px auto;
+}
+.QuickLink h3 {
+    text-align: center;
+    margin-top: 30px;
+}
+.QuickLink nav {
+    background-color: #d0eaeb;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(26, 26, 18, 0.2);   /* used from AI */
+}
+.QuickLink nav:hover {
+    transform: scale(1.1);
+}
+.QuickLink nav a:hover {
+    color: #ff00ea; 
+    transform: scale(1.1);
+}
+.QuickLink  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;        /* this will make the items stay within the box */
+    padding: 0px;
+}
+.QuickLink nav ul li a {
+    padding: 20px;
+    display: flex;
+    text-decoration: none;
+    font-size: larger;
+}
+
+#pictures img {
+    display: flex;
+    margin: 20px auto;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.container1 > section  {
+    background: linear-gradient(to bottom, #c6fdff, #FFC0CB);
+    margin: 50px;
+    padding: 30px;
+    width: 400px;
+    text-align: center;
+    border-radius: 40px;
+    transition: transform 0.2s ease-in;
+    box-shadow: 0 4px 8px rgba(26, 26, 18, 0.2);   /* used from AI */
+}
+.container1 > section:hover {
+    transform: scale(1.1);
+}
+.container1 > section h3:hover {
+    transform: scale(1.1);
+}
+.container1 > section table tr th:hover {
+    transform: scale(1.1);
+}
+.container1 > section ul, ol {
+    list-style: none;
+}
+.container1 > section ul li {
+    margin-bottom: 10px;
+}
+.container1 > section ol li {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.container1 > section table {
+    display: grid;
+    gap: 50px 100px;
+    grid-template-columns: auto;
+    justify-content: center;
+    border-spacing: 30px 0px;
+}
+.container1 > section table tr {
+    justify-content: center;
+}
+.container1 > section td, th {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.container2 > section h3:hover {
+    transform: scale(1.1);
+}
+.container2 > section  {
+    background: linear-gradient(to top, #c6fdff, #FFC0CB);
+    margin: 50px;
+    padding: 30px;
+    width: 400px;
+    text-align: center;
+    border-radius: 40px;
+    transition: transform 0.2s ease-in;
+    box-shadow: 0 4px 8px rgba(26, 26, 18, 0.2);   /* used from AI */
+}
+.container2 > section:hover {
+    transform: scale(1.1);
+}
+.container2 > section ul li {
+    list-style: none;
+    padding: 20px;
+}
+
+/* used from AI */
+img, iframe {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.5s;
+}
+img:hover, iframe:hover {
+    transform: scale(1.05);
+}
+
+/* used from AI */ 
+form {
+    border-radius: 30px 30px 0px 0px;
+    background-color: #d0eaeb;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+}
+form p, label {
+    text-align: center;
+}
+input, button {
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+button {
+    background-color: #FFC0CB;
+    color: #121212;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+button:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    margin-top: 40px;
+    background-color: #d0eaeb;
+    padding-bottom: 10px;
+}
+#Contacts {
+    text-align: center;
+    padding: 20px 0px;
+}
+#Contacts h2 {
+    margin: 0px;
+    padding-bottom: 10px;
+}
+#Contacts li {
+    list-style: none;
+    font-size: larger;
+    padding: 5px;
+}
+#Contacts a {
+    text-decoration: none;
+}
+#Contacts a:hover {
+    color: rgb(197, 0, 0);
+}
