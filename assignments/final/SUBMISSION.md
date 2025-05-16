@@ -1,7 +1,7 @@
 Name: Phong Nguyen <br>
 Student ID: 923377855 <br>
 GitHub Username: gitphongn <br>
-Assignment Number: 3
+Final Project
 
 ## Reflection
 Working in a group setting was quite challenging depending on the coordination my group have. My group had a good amount of coordination 
